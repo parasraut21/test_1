@@ -1,0 +1,33 @@
+
+.chessboard-outline {
+    position: relative;
+    width: 32rem;
+    height: 44rem; 
+    border: 1px solid white;
+     left: -6rem; 
+     top:-1rem;
+  }
+  
+  .white-outline {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 12.5%;
+    height: 100%;
+    /* border-right: 2px solid white; White outline on the right side */
+    box-sizing: border-box;
+    left:-13rem;
+  }
+
+  .te {
+    color: aliceblue;
+    margin-left: 20px;
+    margin-top: 2rem;
+   
+    height: 3rem;
+    margin-left: 14rem;
+    margin-top: 3.5rem;
+    width: 30rem; /* Set the width where you want to break the sentence */
+    word-break: break-all; /* Allow sentence to break at the specified width */
+    overflow-wrap: break-word; /* Alternative property for word-break */
+  }

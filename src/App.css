@@ -1,0 +1,42 @@
+@import './constants.css';
+@import url('https://fonts.googleapis.com/css2?family=Sofia+Sans&display=swap');
+
+html,body {
+  margin: 0;
+  padding: 0;
+}
+
+.App {
+  display: grid;
+  place-content: center;
+  height: 100vh;
+  width: 100vw;
+  background: var(--bg-color);
+  font-family: 'Sofia Sans', sans-serif;
+  grid-template-columns: auto 220px;
+}
+button {
+  background: var(--dark-tile);
+  color: var(--light-tile);
+  border: 0 none;
+  padding: 10px 30px;
+  margin: 10px 0;
+  font-size: 1.1em;
+} 
+
+
+@media only screen and (max-width: 360px) {
+  :root {
+      --tile-size : 2.7rem;
+      width: 150vw;
+  }
+  .App {
+    --tile-size : 2.7rem;
+    height: 100vh;
+    width: 155vw;
+  }
+}
+
+body {
+  overflow-x: hidden;
+}

@@ -1,0 +1,39 @@
+
+
+.profile-sections {
+  margin-left:5rem;
+  margin-top:1.5rem;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+
+  border-radius: 5px;
+  position: absolute;
+  top: -1rem; 
+  left: 44rem; 
+  z-index: 1;
+}
+
+.profile-photo {
+  width: 2rem; /* Adjust the size of the profile photo as needed */
+  height: 2rem; /* Adjust the size of the profile photo as needed */
+  border-radius: 3px; /* Use a value less than half of the width/height for a square appearance */
+  margin-bottom: 10px;
+  margin-top: -1rem;
+  border: 1px solid yellow;
+}
+
+
+.setting-photo-s{
+  width: 2rem; /* Adjust the size of the profile photo as needed */
+  height: 2rem; /* Adjust the size of the profile photo as needed */
+  border-radius: 3px; /* Use a value less than half of the width/height for a square appearance */
+  margin-bottom: 10px;
+  margin-top: -0.5rem;
+margin-left:-4rem;
+}
+
+.setting-icon{
+  margin-top:-44.5rem;
+  margin-left:29rem;
+}

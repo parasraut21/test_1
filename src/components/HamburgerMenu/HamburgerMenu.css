@@ -1,0 +1,85 @@
+/* HamburgerMenu.css */
+.hamburger-menu {
+  position: relative;
+  background: var(--bg-color);
+}
+
+.hamburger-icon {
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 20px;
+  position: relative;
+  z-index: 10;
+  left: 0.3rem;
+  top:0.5rem;
+}
+
+.hamburger-icon span {
+  display: block;
+  width: 100%;
+  height: 4.3px;
+  background-color:white;
+  transition: transform 0.3s, opacity 0.3s;
+}
+
+.hamburger-icon span:first-child {
+  transform-origin: 0 0;
+}
+
+.hamburger-icon span:last-child {
+  transform-origin: 0 100%;
+}
+
+/* Initial state, the hamburger icon is closed */
+.hamburger-icon span {
+  transform: translateY(0) rotate(0);
+}
+
+/* When the menu is open, the hamburger icon will form an X shape */
+.hamburger-menu.open .hamburger-icon span:first-child {
+  transform: translateY(7px) rotate(45deg);
+}
+
+.hamburger-menu.open .hamburger-icon span:last-child {
+  transform: translateY(-7px) rotate(-45deg);
+}
+
+.hamburger-menu.open .hamburger-icon span:nth-child(2) {
+  opacity: 0;
+}
+
+.menu-links {
+    left:1rem;
+  position: absolute;
+  top: 0;
+ /* Start the menu from the left edge */
+  background: var(--bg-color);
+  padding: 10px;
+ 
+  border-right: none; /* Remove the right border since it opens from the left */
+  display: flex;
+  flex-direction: column;
+  width: 200px;
+  height: 100%; /* Extend the menu to cover the entire height of the viewport */
+  transition: left 0.3s; /* Add a transition to smoothly show/hide the menu */
+}
+
+/* Move the menu into view when it is open */
+.hamburger-menu.open .menu-links {
+  left: calc(100% - 200px); /* Move the menu to the right edge */
+}
+
+.menu-links a {
+    margin-left:2rem;
+    margin-top:2rem;
+  padding: 8px;
+  color: white;
+  text-decoration: none;
+}
+
+.menu-links a:hover {
+  background-color: #f0f0f0;
+}
