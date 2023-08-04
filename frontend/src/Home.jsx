@@ -1,4 +1,4 @@
-import './App.css';
+
 import Board from './components/Board/Board';
 import React, { useState,useEffect } from 'react';
 import { reducer } from './reducer/reducer'
@@ -17,8 +17,9 @@ import Component from './Component';
 import { useSelector } from "react-redux";
 import  createPosition  from './CreatePosition'
 import Piece from './components/Pieces/Piece';
+import RoomPage from './RoomPage';
 
-function App() {
+function Home() {
 
     const [appState, dispatch ] = useReducer(reducer,initGameState);
 
@@ -43,11 +44,13 @@ function App() {
          <HamburgerMenu/>
             <UProfile/>
             <OProfile/>
+           
             {/* <Settings/> */}
           {/* <Component /> */}
 
             <div className="App">
             <div>
+                
             <Board/>
             
             </div>
@@ -57,10 +60,10 @@ function App() {
       {showSettings && <SettingsInterface onClose={handleSettingIconClick} />}
              </div>
             </div>
-      
+            <RoomPage/>
         </AppContext.Provider>
        
     ); 
 }
 
-export default App;
+export default Home;

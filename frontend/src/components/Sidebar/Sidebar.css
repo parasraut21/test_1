@@ -31,3 +31,35 @@
     word-break: break-all; /* Allow sentence to break at the specified width */
     overflow-wrap: break-word; /* Alternative property for word-break */
   }
+
+  .text-container {
+    max-height: 300px; /* Add a max height to enable scrolling */
+    overflow-y: auto; /* Enable vertical scrolling */
+    margin-top: -38rem;
+  }
+  
+  .text-container p {
+    max-width: 300px; 
+  max-height: 30px;
+  overflow: auto;
+    margin: 4px 0; /* Add margin between messages */
+    padding: 6px 12px; /* Add padding to messages */
+    border-radius: 8px; /* Round the corners of messages */
+    margin-left: 1.5rem;
+  }
+
+  .text-container h2 {
+  color: aqua;
+  margin-left: 2rem;
+  }
+  
+  .sender {
+    background-color: #007bff; /* Blue color for sender messages */
+    color: white;
+    width: 28rem;
+    
+  }
+  
+  .receiver {
+    background-color: #f0f0f0; /* Light gray color for receiver messages */
+  }

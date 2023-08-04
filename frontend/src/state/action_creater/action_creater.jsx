@@ -15,6 +15,11 @@ export const setPieceClassName = (className) => {
   };
 };
 
+export const addMessage = (message) => ({
+  type: 'ADD_MESSAGE',
+  payload: message,
+});
+
 // export const setPieceClassName = (className) => {
 //   return {
 //     type: 'SET_PIECE_CLASS',

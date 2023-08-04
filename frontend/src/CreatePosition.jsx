@@ -3,7 +3,7 @@ import { useState, useEffect } from "react";
 import { useSelector } from "react-redux";
 
 function createPosition(Ptheme) {
-    console.log(Ptheme);
+
     const position = new Array(8).fill("").map((x) => new Array(8).fill(""));
   
 

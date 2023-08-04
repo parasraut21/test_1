@@ -1,13 +1,13 @@
 import React from 'react';
-import profilePhotoUrl from './user-image.svg';
-import './UProfile.css';
+import profilePhotoUrl from './opponent.png';
+import './OProfile.css';
 
-const UProfile = () => {
-  const name = 'Paras Raut';
+const OProfile = ({name}) => {
+  // const name = 'Opponent';
 
   return (
     <>
-     <div className="profile-section">
+     <div className="profile-sectionO">
       <img src={profilePhotoUrl} alt="Profile" className="profile-photo" /> 
       <div className="profile-name">{name}</div>
     </div>
@@ -18,4 +18,4 @@ const UProfile = () => {
   );
 };
 
-export default UProfile;
+export default OProfile;

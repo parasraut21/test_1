@@ -1,9 +1,9 @@
 import React from 'react';
-import profilePhotoUrl from './opp.png';
+import profilePhotoUrl from './opponent.png';
 import './OSProfile.css';
 
-const OSProfile = () => {
-  const name = 'Opponent';
+const OSProfile = ({name}) => {
+  // const name = 'Opponent';
 
   return (
     <>

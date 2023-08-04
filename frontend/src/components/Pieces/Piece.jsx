@@ -41,8 +41,6 @@ const Piece = ({
    
      // Get the pieceClassName from the Redux store
     
-
-      console.log(pieceClassName)
  
     return (
         <div 
